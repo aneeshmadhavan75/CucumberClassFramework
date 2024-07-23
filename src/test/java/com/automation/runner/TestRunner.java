@@ -10,6 +10,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "com.automation.steps",
         tags = "@WIP",
+        plugin = {"html:target/report.html", "json:target/cucumber.json"},
         dryRun = true
 )
 public class TestRunner {
